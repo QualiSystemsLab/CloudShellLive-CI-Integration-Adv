@@ -53,13 +53,13 @@ parser.feed(testHTML)
 # compare value we got back
 if (needle.strip() == needleCompare.strip()):
     # identical
-    print "PASS! Expected '" + needleCompare.strip() +"' and got '"+needle.strip()+"'"
+    print("PASS! Expected '" + needleCompare.strip() +"' and got '"+needle.strip()+"'")
     pass
 elif (len(needle.strip()) == 0):
     # couldnt find node
-    print "FAIL! Expected '" + needleCompare.strip() +"' and could not locate node '"+needleNode+"'"
+    print("FAIL! Expected '" + needleCompare.strip() +"' and could not locate node '"+needleNode+"'")
     exit(1)
 else:
     # not identical
-    print "FAIL! Expected '" + needleCompare.strip() +"' and got '"+needle.strip()+"'"
+    print("FAIL! Expected '" + needleCompare.strip() +"' and got '"+needle.strip()+"'")
     exit(2)
