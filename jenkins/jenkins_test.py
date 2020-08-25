@@ -1,6 +1,6 @@
 import requests
 import json
-from HTMLParser import HTMLParser
+from html.parser import HTMLParser
 import os
 import time
 
